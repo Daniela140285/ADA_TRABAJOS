@@ -1,0 +1,7 @@
+//Escribe un programa que convierta una temperatura dada en grados Celsius a grados Fahrenheit.
+//Pide al usuario que ingrese la temperatura en Celsius y muestra el resultado en Fahrenheit.
+const prompt = require ('prompt-sync')();
+
+let tempCel = parseFloat (prompt("ingrese la temperatura actual: "));
+let tempFa = tempCel *9 / 5 + 32;
+console.log(`La temperatura actual de ${tempCel} °C corresponde a ${tempFa} °F `);
