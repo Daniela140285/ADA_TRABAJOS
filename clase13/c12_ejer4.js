@@ -12,12 +12,12 @@ posiciones específicas del array notas.
 */
 const prompt = require('prompt-sync')();
 
-let notas = [];
+let notas = []; 
 let cantidad = 4; //cantidad de notas a ingresar, Esto controla cuántas veces se repite el for.
 
 for (let i = 0; i < cantidad; i ++){
     let ingresoNota = parseInt(prompt(`Ingrese la nota del estudiante ${i +1}: `)); //VER MÁS ABAJO
-    notas[i] = ingresoNota;    //Guardamos la nota en el array
+    notas[i] = ingresoNota;    //Guardamos la nota en el array. notas[i] significa: en la lista notas, en el casillero numero i
 }
 console.log("Las notas ingresadas son:");
 console.log(notas);

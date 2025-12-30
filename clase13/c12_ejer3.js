@@ -15,12 +15,12 @@ encontrados.
 
 const prompt = require('prompt-sync')();
 
-let num = parseInt(prompt('Ingrese un número cualquiera: '));
+   
 let numImpar = 0;
 
  for (let i = 0; i <= num; i++){
     if ( i % 2 !== 0 ){
-        numImpar ++;
+        numImpar ++;        //sumale 1 a lo que ya tenías, Ojo! no sumamos el número i, solo contamos 1 más a la colección
     }
  }
 console.log(`La cantidad de números impares encontrados, desde el 0 hasta el ${num}, es de: ${numImpar}`);
