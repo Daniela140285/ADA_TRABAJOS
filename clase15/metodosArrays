@@ -1,0 +1,54 @@
+//Creamos un array inical con razas de perros
+let razasPerros = ["labrador", "Cocker", "Pug", "Beagle"];
+
+console.log("Array inicial", razasPerros);
+
+//1. Método .push(): AGREGA un elemento más al final de mi array----------------------------------
+
+razasPerros.push("Caniche");
+console.log("Después de push (Caniche): ", razasPerros);
+
+
+//2. Método .pop(): ELIMINA el ultimo elemento del array, y los devuelve-------------------------------
+
+let razaEliminada = razasPerros.pop();
+console.log("Después de pop(): ", razasPerros);
+console.log("Raza eliminda con pop es: ", razaEliminada);
+
+//3. Método .shift(): ELIMINA el primer elemento del array y lo devuelve--------------------------------
+
+let primeraRaza = razasPerros.shift();
+console.log("Después de shift(): ", razasPerros);
+console.log("Raza eliminada con shift: ", primeraRaza);
+
+
+//4. Método .unshift(): AGREGA uno o más elemntos al inicio del array----------------------------------
+
+razasPerros.unshift("doberman");
+console.log("DEspués de unshift(): ", razasPerros);
+
+//5. Método .join(): UNE todos los elementos del array en un solo string, separados por comas si no se especifica-----------
+
+let razasString = razasPerros.join(' - ');
+console.log("Array unido con string: ",razasString);
+
+
+//6. Método .indexOf():DEVUELVE el primer indice donde se encuentra el elemento (sino devuelve -1)-----------
+
+let indiceCocker = razasPerros.indexOf("Cocker");
+console.log("Raza con indice de Cocker en indexof: ", indiceCocker) // resultado: 1
+
+
+//7. Método .lastIndexOf(): DEVUELVE el ultimo indice donde se encuentra el elemento
+
+let razasDobles = ["Bulldog", "Siberiano", "Dalmate", "Salchicha", "Siberiano"];
+console.log("Array con razas dobles: ",razasDobles);
+let ultimoSiberiano = razasDobles.lastIndexOf("Siberiano");
+console.log("Ultimo indice de Siberiano con lastindexof: ", ultimoSiberiano); // resultado:4
+
+
+//8. Método .includes():DEVUELVE TRUE o FALSE, si el elemento exite o no en el array, respectivamente.
+
+let tienePug = razasPerros.includes("Pug");
+console.log("¿El array incluye Pug?", tienePug); //resultado: TRUE
+
